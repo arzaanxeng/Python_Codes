@@ -54,7 +54,6 @@ def process_orders(raw_orders):
         else:
             invalid_id.append(order_id)
 
-    print(invalid_id)
     return data, invalid_id
 
 #REVENUE CALCULATION

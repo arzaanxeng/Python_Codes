@@ -54,7 +54,6 @@ def process_orders(raw_orders):
         else:
             invalid_id.append(order_id)
 
-    print(invalid_id)
     return data, invalid_id
 
 #REVENUE CALCULATION
@@ -71,7 +70,7 @@ def calculate_revenue(valid_orders, invalid_orders , tax_rate=0.08):
     total = subtotal + tax
     print(f"Subtotal: ${subtotal:.2f}")
     print(f"Tax ({tax_rate*100:.0f}%): ${tax:.2f}")
-    print(f"Total: ${total:}")
+    print(f"Total: ${total:.2f}")
 
 #MAIN
 valid_orders , invalid_orders = process_orders(raw_orders)

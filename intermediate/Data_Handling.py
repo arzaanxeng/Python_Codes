@@ -39,7 +39,7 @@ print("the single extreme outlier artificially inflates the company average (Mea
 
 sns.set_theme(style="whitegrid")
 plt.figure(figsize=(8, 4))
-sns.boxplot(x=df['Stipend'], color='#3498db')
+sns.boxplot(x=df['Stipend'], color='blue')
 plt.title('Distribution of Intern Stipends (Identifying Outliers)', fontsize=14, pad=15)
 plt.xlabel('Stipend Amount (₹)', fontsize=12)
 plt.tight_layout()

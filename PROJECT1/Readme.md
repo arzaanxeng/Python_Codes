@@ -15,4 +15,4 @@ A modern School Management System built using Python and Streamlit.
 - JSON Database
 
 ## Live Demo
-- Click on this link -> [Streamlit App Link]
+- Click on this link -> [https://pythoncodes-nlzc89nqffpla76ph2zxtw.streamlit.app/]

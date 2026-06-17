@@ -12,7 +12,11 @@ st.set_page_config(
 )
 
 # ── Data layer ────────────────────────────────────────────────────────────────
-DATABASE = "school_data.json"
+
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent
+DATABASE = BASE_DIR / "school_data.json"
+
 
 def load_data():
     if Path(DATABASE).exists():

@@ -16,7 +16,7 @@ Print which students are in both the first and second subject
 #Task 1
 student = {"name": "Arzaan", "age": 20, "grade" : "A" , "subjects": ["Maths" , "Physics" , "Computer_Science"]}
 for key , value in student.items():
-    print(f"{key.capitalize():<16} {str(value):<6}")
+    print(f"{key.capitalize():<16} {str(value):<6}")  # :<(Integer) This creates space between the words
 
 print(f"{'=' * 50}")
 student.update({"age": 21, "city": "New_York"})
@@ -43,7 +43,7 @@ combined_dict = {
     "Electronics":{"Arzaan" , "Sakshi" , "Meghan" , "Helena" , "Stewart"}
 }
 
-subject1_students = combined_dict.get("Maths")
+subject1_students = combined_dict.get("Maths")       # Get method is more preferred
 subject2_students = combined_dict.get("Electronics")
 
 intersection = subject1_students.intersection(subject2_students)

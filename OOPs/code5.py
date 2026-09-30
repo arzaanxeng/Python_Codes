@@ -5,7 +5,6 @@ class Franchise(ABC):
     @abstractmethod
     def intro(self):
         pass
-
 """
 This is done in order to make sure that if a company wants to ensure that each class in the
 program must contain a particular type of method than we use abstraction.
